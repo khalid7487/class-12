@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniro - Furniture Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="images/furniro-logo.png"
+            alt="Furniro Logo"
+            class="logo-image"
+          />
+          <h1>Furniro</h1>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="./shop/index.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./Contact/index.html">Contact</a></li>
+            <li><a href="./blog/index.html">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <button aria-label="Account">
+            <img src="images/account-icon.png" alt="" />
+          </button>
+          <button aria-label="Search">
+            <img src="images/search-icon.png" alt="" />
+          </button>
+          <button aria-label="Wishlist">
+            <img src="images/heart-icon.png" alt="" />
+          </button>
+          <a href="./cart/index.html">
+            <button aria-label="Cart">
+              <img src="images/cart-icon.png" alt="" />
+            </button>
+          </a>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-image">
+          <div class="hero-content">
+            <p class="subtitle">New Arrival</p>
+            <h2>
+              Discover Our
+              <br />
+              New Collection
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </p>
+            <a href="./shop/index.html">
+              <button class="btn">BUY NOW</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Browse The Range -->
+      <section class="browse-range">
+        <div class="section-header">
+          <h2>Browse The Range</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="category-grid">
+          <div class="category-item">
+            <div class="category-image">
+              <img src="images/dining.png" alt="Dining room furniture" />
+            </div>
+            <h3>Dining</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-image">
+              <img src="images/living.png" alt="Living room furniture" />
+            </div>
+            <h3>Living</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-image">
+              <img src="images/bedroom.png" alt="Bedroom furniture" />
+            </div>
+            <h3>Bedroom</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Products -->
+      <section class="our-products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-tag sale">-30%</span>
+                <img
+                  src="images/product1.png"
+                  alt="Sytherine - Stylish cafe chair"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Sytherine</h3>
+                <p class="product-desc">Stylish cafe chair</p>
+                <div class="product-price">
+                  <span class="current-price">Rp 2.500.000</span>
+                  <span class="old-price">Rp 3.500.000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product 2 -->
+            <div class="product-card second-card">
+              <div class="product-image">
+                <img
+                  src="images/product2.png"
+                  alt="Leviosa - Stylish cafe chair"
+                />
+                <div class="product-actions">
+                  <button class="add-to-cart-btn second-add-to-cart-btn">
+                    <a href="./cart/index.html">Add to cart</a>
+                  </button>
+                  <div class="action-icons second-action-icons">
+                    <button>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 10.6667C11.4747 10.6667 11 10.8734 10.644 11.2047L5.94 8.46671C5.97333 8.31337 6 8.16004 6 8.00004C6 7.84004 5.97333 7.68671 5.94 7.53337L10.64 4.79337C11 5.12671 11.4733 5.33337 12 5.33337C13.1067 5.33337 14 4.44004 14 3.33337C14 2.22671 13.1067 1.33337 12 1.33337C10.8933 1.33337 10 2.22671 10 3.33337C10 3.49337 10.0267 3.64671 10.06 3.80004L5.36 6.54004C5 6.20671 4.52667 6.00004 4 6.00004C2.89333 6.00004 2 6.89337 2 8.00004C2 9.10671 2.89333 10 4 10C4.52667 10 5 9.79337 5.36 9.46004L10.0587 12.2054C10.0211 12.3563 10.0014 12.5112 10 12.6667C10 13.0623 10.1173 13.4489 10.3371 13.7778C10.5568 14.1067 10.8692 14.3631 11.2346 14.5145C11.6001 14.6658 12.0022 14.7054 12.3902 14.6283C12.7781 14.5511 13.1345 14.3606 13.4142 14.0809C13.6939 13.8012 13.8844 13.4448 13.9616 13.0569C14.0387 12.6689 13.9991 12.2668 13.8478 11.9013C13.6964 11.5359 13.44 11.2235 13.1111 11.0038C12.7822 10.784 12.3956 10.6667 12 10.6667Z"
+                          fill="white"
+                        />
+                      </svg>
+  
+                      Share
+                    </button>
+                    <button>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.08 7L11.08 8L14.52 4.55L11 1L10 2L11.8 3.8H2.00004V5.2H11.82L10.08 7ZM5.86004 9L4.86004 8L1.42004 11.5L4.91004 15L5.91004 14L4.10004 12.2H14V10.8H4.10004L5.86004 9Z"
+                          fill="white"
+                        />
+                      </svg>
+  
+                      Compare
+                    </button>
+                    <button>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z"
+                          stroke="white"
+                          stroke-width="1.8"
+                        />
+                      </svg>
+  
+                      Like
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Leviosa</h3>
+                  <p class="product-desc">Stylish cafe chair</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 2.500.000</span>
+                </div>
+              </div>
+            </div>
+
+          
+
+          <!-- Product 3 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-tag new">New</span>
+                <img src="images/product3.png" alt="Lolito - Luxury big sofa" />
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Lolito</h3>
+                  <p class="product-desc">Luxury big sofa</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 7.000.000</span>
+                  <span class="old-price">Rp 14.000.000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+
+          <!-- Product 4 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-tag discount">-50%</span>
+                <img
+                  src="images/product4.png"
+                  alt="Respira - Outdoor bar table and stool"
+                />
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Respira</h3>
+                  <p class="product-desc">Outdoor bar table and stool</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 500.000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+
+          <!-- Product 5 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="images/product5.png" alt="Grifo - Night lamp" />
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Grifo</h3>
+                  <p class="product-desc">Night lamp</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 1.500.000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+
+          <!-- Product 6 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-tag new">New</span>
+                <img src="images/product6.png" alt="Muggo - Small mug" />
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Muggo</h3>
+                  <p class="product-desc">Small mug</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 150.000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+
+          <!-- Product 7 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-tag hot">Hot</span>
+                <img src="images/product7.png" alt="Pingky - Cute bed set" />
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Pingky</h3>
+                  <p class="product-desc">Cute bed set</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 7.000.000</span>
+                  <span class="old-price">Rp 14.000.000</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+
+          <!-- Product 8 -->
+          <a href="./single product/index.html">
+            <div class="product-card">
+              <div class="product-image">
+                <span class="product-tag new">New</span>
+                <img
+                  src="images/product8.png"
+                  alt="Potty - Minimalist flower pot"
+                />
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>Potty</h3>
+                  <p class="product-desc">Minimalist flower pot</p>
+                </div>
+                <div class="product-price">
+                  <span class="current-price">Rp 500.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-more">
+            <button class="btn outline-btn">Show More</button>
+          </div>
+          </a>
+          
+      </section>
+
+      <!-- Room Inspiration -->
+      <section class="room-inspiration">
+        <div class="inspiration-content">
+          <h2>
+            50+ Beautiful rooms
+            <br />
+            inspiration
+          </h2>
+          <p>
+            Our designer already made a lot of beautiful
+            <br />
+            prototipe of rooms that inspire you
+          </p>
+          <button class="explore-more-btn">Explore More</button>
+        </div>
+        <div class="inspiration-slider">
+          <div class="slider-main-image">
+            <img
+              src="images/room-inspiration1.png"
+              alt="Bedroom with gallery wall"
+            />
+            <div class="slider-caption">
+              <div class="caption-content">
+                <p class="slider-subtitle">01 — Bed Room</p>
+                <h3>Inner Peace</h3>
+              </div>
+              <button class="slider-next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="slider-secondary-images">
+            <img src="images/room-inspiration2.png" alt="Bright dining area" />
+            <div class="slider-navigation">
+              <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <button class="slider-arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="slider-third-images">
+            <img src="images/room-inspiration3.png" alt="Bright dining area" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Section -->
+      <section class="social-media">
+        <h2>Share your setup with</h2>
+        <p class="hashtag">#FuniroFurniture</p>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item-1">
+            <img
+              src="images/gallery1.png"
+              alt="Shelf with plants and decorative items"
+            />
+          </div>
+          <div class="gallery-item gallery-item-2">
+            <img
+              src="images/gallery6.png"
+              alt="Desk with laptop and vintage radio"
+            />
+          </div>
+          <div class="gallery-item gallery-item-3">
+            <img src="images/gallery5.png" alt="Vintage armchair" />
+          </div>
+          <div class="gallery-item gallery-item-4">
+            <img
+              src="images/gallery8.png"
+              alt="Wooden stools with vase and camera"
+            />
+          </div>
+          <div class="gallery-item gallery-item-5">
+            <img
+              src="images/gallery4.png"
+              alt="Dining room with table and chairs"
+            />
+          </div>
+          <div class="gallery-item gallery-item-6">
+            <img src="images/gallery2.png" alt="Dining area with brick wall" />
+          </div>
+          <div class="gallery-item gallery-item-7">
+            <img
+              src="images/gallery9.png"
+              alt="Cozy corner with blanket and tray"
+            />
+          </div>
+          <div class="gallery-item gallery-item-8">
+            <img
+              src="images/gallery7.png"
+              alt="Kitchen backsplash with utensils"
+            />
+          </div>
+          <div class="gallery-item gallery-item-9">
+            <img
+              src="images/gallery3.png"
+              alt="Modern bedroom with headboard"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Funiro.</h3>
+            <p>
+              Worldwide furniture store since 2020. We sell over 1000+ branded
+              products.
+            </p>
+            <p>Sawojajar Malang, Indonesia</p>
+            <p>+6289 456 3455</p>
+          </div>
+          <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/shop">Shop</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/blog/">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="/payment">Payment Options</a></li>
+              <li><a href="/returns">Returns</a></li>
+              <li><a href="/policies">Privacy Policies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <div class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="newsletter-input"
+              />
+              <button class="newsletter-button">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>2023 Funiro. All rights reserved. Developed by : Inspiresoft</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
